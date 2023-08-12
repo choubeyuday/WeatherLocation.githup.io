@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    background-color: aliceblue;
+    border: 2px solid red;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.header{
+    text-align: center;
+    background: cornsilk;
+    width: 100%;
+    border: 3px double #ebeb8a;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+    
+}
+
+#search-box{
+    font-size: 16px;
+    text-align: center;
+    background-color: beige;
+    padding: 5px;
+    border: 4px groove lightgrey;
+    border-radius: 20px;
+    margin: 0 -8px;
+    text-transform: capitalize;
+    width: 181px;
+}
+
+.search-box button{
+    margin: 0 39px;
+    font-size: 22px;
+    background-color: #85e7a1;
+    border: 4px double #bbabab59;
+    border-radius: 49%;
+    padding: 5px;
+}
+
+.search-box button:hover{
+    color: #d21414;
+    background-color: #818181;
+}
+
+.wheather-info {
+    justify-content: center;
+    display: none;
+    align-items: center;
+    flex-direction: column; 
+    margin-block: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.temperature{
+    margin: 18px;
+    font-size: 34px;
+}
+
+
+.wheather-info img {
+    width: 60%;
+}
+
+.temperature sub{
+    color: #984e4e;
+    font-size: 18px;
+    position: absolute;
+}
+
+.wheather-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity , .wind {
+    display: flex;
+    align-items: center;
+    margin: 52px 0;
+    text-align: justify;
+    font-size: medium;
+}
+
+.text {
+    margin: 0 1px;
+}
+
+.humidity{
+    margin-left: 35px;
+}
+.wind{
+    margin-right: 10px;
+}
+
+span#humidity {
+    margin: 10px 3px;
+    font-size: 22px;
+}
+
+span#wind-speed {
+    font-size: 22px;
+}
+
+.huumidity,.wind .text p {
+    margin: 0px 4px;
+    color: #453a3a;
+}
+
+.wheather-detail i {
+    font-size: x-large;
+}
+
+.ion-icon.md.hydrated {
+    font-size: x-large;
+}
+
+.not-found {
+    margin: 25px 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.not-found h1 {
+    font-size: 22px;
+    color: #a68585;
+}
+
+img.img-not {
+    width: 80%;
+    margin: 15px 0;
+}
+
+.red{
+    text-transform: capitalize;
+    color: rgba(255, 0, 0, 0.266);
+}
+
+.green{
+    text-transform: capitalize;
+    color: rgb(200, 115, 17);
+}
+
+.yellow{
+    text-transform: capitalize;
+    color: rgb(121, 195, 248)
+}
+
+button.btn-clear.btn.btn-info {
+    background-color: #fb3f0ad4;
+    margin: 0 -8px;
+    font-size: 21px;
+    width: fit-content;
+}
+.hidden{
+    visibility:hidden;
+    opacity: 0;
+    scale: 0.5;
+    transition: all 3s ease-in;
+}
+.show{
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+    transition: all 3s ease-out;
+}
